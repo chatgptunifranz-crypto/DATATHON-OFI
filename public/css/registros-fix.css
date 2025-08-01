@@ -1,0 +1,39 @@
+/* Estilos para corregir problemas de layout en registros */
+
+/* Asegurar que el contenido principal tenga el padding correcto */
+.content-wrapper {
+    min-height: calc(100vh - 3.5rem);
+    padding-bottom: 60px;
+}
+
+/* Asegurar que el formulario no interfiera con la barra lateral */
+.content {
+    padding: 15px;
+}
+
+/* Corregir z-index si hay problemas de superposición */
+.main-sidebar {
+    z-index: 1040;
+}
+
+.navbar {
+    z-index: 1030;
+}
+
+/* Asegurar que los mapas no interfieran con el layout */
+#map {
+    position: relative;
+    z-index: 1;
+}
+
+/* Corregir el contenedor del formulario */
+.card {
+    position: relative;
+    z-index: 1;
+}
+
+/* Asegurar que el footer no interfiera */
+.main-footer {
+    position: relative;
+    z-index: 1020;
+}

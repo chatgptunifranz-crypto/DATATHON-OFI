@@ -1,0 +1,304 @@
+/* Estilos para el formulario de usuarios */
+.user-form-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.user-form-container .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.user-form-container label {
+    font-weight: 600;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.user-form-container .form-control {
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 0.75rem;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.user-form-container .form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+    outline: none;
+}
+
+.user-form-container select.form-control {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.user-form-container .photo-container {
+    border: 2px dashed #cbd5e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    background: #f8fafc;
+}
+
+.user-form-container .photo-preview {
+    max-width: 200px;
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.user-form-container .btn {
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.user-form-container .btn-success {
+    background-color: #2ecc71;
+    border-color: #27ae60;
+}
+
+.user-form-container .btn-success:hover {
+    background-color: #27ae60;
+    border-color: #219a52;
+    transform: translateY(-1px);
+}
+
+.user-form-container .btn-secondary {
+    background-color: #95a5a6;
+    border-color: #7f8c8d;
+}
+
+.user-form-container .btn-secondary:hover {
+    background-color: #7f8c8d;
+    border-color: #6c7a7d;
+    transform: translateY(-1px);
+}
+
+.user-form-container .alert {
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.user-form-container .alert-danger {
+    background-color: #fee2e2;
+    border: 1px solid #ef4444;
+    color: #b91c1c;
+}
+
+/* Estilo para el input de tipo file */
+.user-form-container input[type="file"] {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.user-form-container input[type="file"]::-webkit-file-upload-button {
+    background: #3498db;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+/* =====================================================
+   TEMA VERDE MILITAR POLICIAL 
+   ===================================================== */
+
+/* Colores principales para tema policial */
+:root {
+    --police-green: #2d5016;
+    --police-green-light: #3d6b20;
+    --police-green-dark: #1a3009;
+    --police-gold: #ffd700;
+    --police-silver: #c0c0c0;
+    --police-navy: #1e3a8a;
+}
+
+/* Navbar verde militar */
+.navbar-success {
+    background: linear-gradient(135deg, var(--police-green) 0%, var(--police-green-light) 100%) !important;
+    border-bottom: 3px solid var(--police-gold);
+}
+
+.navbar-success .navbar-brand {
+    color: white !important;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Sidebar verde militar */
+.sidebar-dark-success .nav-sidebar>.nav-item>.nav-link.active {
+    background-color: var(--police-green-light) !important;
+    color: white !important;
+    border-left: 4px solid var(--police-gold);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+
+.sidebar-dark-success .nav-sidebar>.nav-item>.nav-link:hover {
+    background-color: var(--police-green-dark) !important;
+    color: var(--police-gold) !important;
+    transition: all 0.3s ease;
+}
+
+.sidebar-dark-success {
+    background: linear-gradient(180deg, var(--police-green) 0%, var(--police-green-dark) 100%) !important;
+}
+
+/* Headers de sección con estilo policial */
+.sidebar .nav-header {
+    background: var(--police-navy) !important;
+    color: var(--police-gold) !important;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Botones con estilo policial */
+.btn-success {
+    background: linear-gradient(135deg, var(--police-green) 0%, var(--police-green-light) 100%) !important;
+    border: 2px solid var(--police-green-dark) !important;
+    color: white !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, var(--police-green-dark) 0%, var(--police-green) 100%) !important;
+    border-color: var(--police-gold) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(45, 80, 22, 0.4);
+}
+
+/* Cards con estilo policial */
+.card-success {
+    border: 2px solid var(--police-green) !important;
+    box-shadow: 0 4px 8px rgba(45, 80, 22, 0.2);
+}
+
+.card-success .card-header {
+    background: linear-gradient(135deg, var(--police-green) 0%, var(--police-green-light) 100%) !important;
+    color: white !important;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    border-bottom: 2px solid var(--police-gold);
+}
+
+/* Logo y branding policial */
+.brand-link {
+    border-bottom: 2px solid var(--police-gold) !important;
+}
+
+.brand-text {
+    color: white !important;
+    font-weight: bold !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Elementos de formulario con tema policial */
+.form-control:focus {
+    border-color: var(--police-green) !important;
+    box-shadow: 0 0 0 0.2rem rgba(45, 80, 22, 0.25) !important;
+}
+
+/* Tablas con estilo policial */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(45, 80, 22, 0.05);
+}
+
+.table th {
+    background-color: var(--police-green);
+    color: white;
+    border-color: var(--police-green-dark);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Enlaces con hover policial */
+a:hover {
+    color: var(--police-green) !important;
+}
+
+/* Badges policiales */
+.badge-success {
+    background-color: var(--police-green) !important;
+    color: white;
+    font-weight: bold;
+}
+
+/* Alertas con estilo policial */
+.alert-success {
+    background-color: rgba(45, 80, 22, 0.1) !important;
+    border-color: var(--police-green) !important;
+    color: var(--police-green-dark) !important;
+}
+
+/* Footer con estilo institucional */
+.main-footer {
+    background: var(--police-navy) !important;
+    color: var(--police-silver) !important;
+    border-top: 3px solid var(--police-gold);
+}
+
+/* Preloader con colores policiales */
+.preloader {
+    background: var(--police-green) !important;
+}
+
+/* Iconos con colores dorados para destacar */
+.nav-icon.text-warning,
+.fa-star,
+.fa-shield-alt {
+    color: var(--police-gold) !important;
+}
+
+/* Efectos especiales para elementos importantes */
+.elevation-4 {
+    box-shadow: 0 14px 28px rgba(45, 80, 22, 0.25), 0 10px 10px rgba(45, 80, 22, 0.22) !important;
+}
+
+/* Personalización del scrollbar */
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: var(--police-green-dark);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: var(--police-gold);
+    border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #ffed4e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .user-form-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}

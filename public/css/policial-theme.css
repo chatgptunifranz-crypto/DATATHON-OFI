@@ -1,0 +1,505 @@
+/* =====================================================
+   TEMA VERDE MILITAR POLICIAL - ADMINLTE 
+   Sistema Policial La Paz
+   ===================================================== */
+
+/* Variables CSS para el tema policial */
+:root {
+    --police-green: #204c03;
+    --police-green-light: #204c03;
+    --police-green-dark: #1a3009;
+    --police-green-medium: #2e5a1a;
+    --police-gold: #ffd700;
+    --police-gold-dark: #e6c200;
+    --police-silver: #c0c0c0;
+    --police-navy: #950707;
+    --police-navy-light: #950707;
+    --police-white: #ffffff;
+    --police-black: #1a1a1a;
+}
+
+/* =====================================================
+   NAVBAR - BARRA SUPERIOR
+   ===================================================== */
+.navbar-success,
+.main-header.navbar-success {
+    background: linear-gradient(135deg, var(--police-green) 0%, var(--police-green-light) 50%, var(--police-green-medium) 100%) !important;
+    border-bottom: 3px solid var(--police-gold) !important;
+    box-shadow: 0 2px 8px rgba(45, 80, 22, 0.3) !important;
+}
+
+.navbar-success .navbar-brand,
+.navbar-success .nav-link {
+    color: var(--police-white) !important;
+    font-weight: 600 !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4) !important;
+}
+
+.navbar-success .navbar-brand:hover,
+.navbar-success .nav-link:hover {
+    color: var(--police-gold) !important;
+    transition: all 0.3s ease !important;
+}
+
+/* =====================================================
+   SIDEBAR - MENÚ LATERAL
+   ===================================================== */
+.main-sidebar,
+.sidebar-dark-success {
+    background: linear-gradient(180deg, var(--police-green) 0%, var(--police-green-dark) 100%) !important;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2) !important;
+}
+
+/* Brand/Logo */
+.brand-link {
+    background: var(--police-navy) !important;
+    border-bottom: 3px solid var(--police-gold) !important;
+    color: var(--police-white) !important;
+}
+
+.brand-text {
+    color: var(--police-white) !important;
+    font-weight: bold !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5) !important;
+    font-size: 1.1rem !important;
+}
+
+.brand-image {
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+}
+
+/* Headers de sección del menú */
+.sidebar .nav-header {
+    background: var(--police-navy) !important;
+    color: var(--police-gold) !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    padding: 12px 15px !important;
+    margin: 8px 10px !important;
+    border-radius: 6px !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    font-size: 0.85rem !important;
+}
+
+/* Enlaces del menú */
+.sidebar-dark-success .nav-sidebar > .nav-item > .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500 !important;
+    padding: 12px 15px !important;
+    margin: 2px 8px !important;
+    border-radius: 6px !important;
+    transition: all 0.3s ease !important;
+}
+
+.sidebar-dark-success .nav-sidebar > .nav-item > .nav-link:hover {
+    background-color: var(--police-green-light) !important;
+    color: var(--police-gold) !important;
+    transform: translateX(5px) !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2) !important;
+}
+
+.sidebar-dark-success .nav-sidebar > .nav-item > .nav-link.active {
+    background: linear-gradient(90deg, var(--police-green-light) 0%, var(--police-green-medium) 100%) !important;
+    color: var(--police-white) !important;
+    border-left: 4px solid var(--police-gold) !important;
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.3), 0 3px 10px rgba(0,0,0,0.2) !important;
+    font-weight: bold !important;
+}
+
+/* Iconos del menú */
+.sidebar-dark-success .nav-sidebar .nav-icon {
+    color: var(--police-gold) !important;
+    margin-right: 10px !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3) !important;
+}
+
+/* =====================================================
+   BOTONES Y ELEMENTOS INTERACTIVOS
+   ===================================================== */
+.btn-success {
+    background: linear-gradient(135deg, var(--police-green) 0%, var(--police-green-light) 100%) !important;
+    border: 2px solid var(--police-green-dark) !important;
+    color: var(--police-white) !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(45, 80, 22, 0.3) !important;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+    background: linear-gradient(135deg, var(--police-green-dark) 0%, var(--police-green) 100%) !important;
+    border-color: var(--police-gold) !important;
+    color: var(--police-white) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 16px rgba(45, 80, 22, 0.4) !important;
+}
+
+.btn-success:active {
+    transform: translateY(0) !important;
+}
+
+/* Botones de información con estilo policial */
+.btn-info {
+    background: linear-gradient(135deg, var(--police-navy) 0%, var(--police-navy-light) 100%) !important;
+    border: 2px solid var(--police-navy) !important;
+    color: var(--police-white) !important;
+    font-weight: 600 !important;
+}
+
+.btn-info:hover {
+    background: linear-gradient(135deg, var(--police-navy-light) 0%, var(--police-navy) 100%) !important;
+    border-color: var(--police-gold) !important;
+    color: var(--police-white) !important;
+}
+
+/* =====================================================
+   CARDS Y CONTENEDORES
+   ===================================================== */
+.card-success {
+    border: 2px solid var(--police-green) !important;
+    box-shadow: 0 4px 12px rgba(45, 80, 22, 0.2) !important;
+    border-radius: 8px !important;
+}
+
+.card-success .card-header {
+    background: linear-gradient(135deg, var(--police-green) 0%, var(--police-green-light) 100%) !important;
+    color: var(--police-white) !important;
+    font-weight: bold !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3) !important;
+    border-bottom: 3px solid var(--police-gold) !important;
+    border-radius: 6px 6px 0 0 !important;
+}
+
+.card-primary {
+    border: 2px solid var(--police-navy) !important;
+    box-shadow: 0 4px 12px rgba(30, 58, 138, 0.2) !important;
+}
+
+.card-primary .card-header {
+    background: linear-gradient(135deg, var(--police-navy) 0%, var(--police-navy-light) 100%) !important;
+    color: var(--police-white) !important;
+    font-weight: bold !important;
+    border-bottom: 3px solid var(--police-gold) !important;
+}
+
+/* =====================================================
+   FORMULARIOS Y INPUTS
+   ===================================================== */
+.form-control:focus {
+    border-color: var(--police-green) !important;
+    box-shadow: 0 0 0 0.2rem rgba(45, 80, 22, 0.25) !important;
+}
+
+.form-control.is-valid:focus {
+    border-color: var(--police-green) !important;
+    box-shadow: 0 0 0 0.2rem rgba(45, 80, 22, 0.25) !important;
+}
+
+/* Labels con estilo policial */
+.form-group label {
+    color: var(--police-green-dark) !important;
+    font-weight: 600 !important;
+}
+
+/* =====================================================
+   TABLAS
+   ===================================================== */
+.table th {
+    background: linear-gradient(135deg, var(--police-green) 0%, var(--police-green-light) 100%) !important;
+    color: var(--police-white) !important;
+    border-color: var(--police-green-dark) !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3) !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(45, 80, 22, 0.05) !important;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(45, 80, 22, 0.1) !important;
+}
+
+/* =====================================================
+   BADGES Y ETIQUETAS
+   ===================================================== */
+.badge-success {
+    background: linear-gradient(135deg, var(--police-green) 0%, var(--police-green-light) 100%) !important;
+    color: var(--police-white) !important;
+    font-weight: bold !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3) !important;
+}
+
+.badge-info {
+    background: linear-gradient(135deg, var(--police-navy) 0%, var(--police-navy-light) 100%) !important;
+    color: var(--police-white) !important;
+    font-weight: bold !important;
+}
+
+.badge-warning {
+    background: linear-gradient(135deg, var(--police-gold-dark) 0%, var(--police-gold) 100%) !important;
+    color: var(--police-black) !important;
+    font-weight: bold !important;
+}
+
+/* =====================================================
+   ALERTAS
+   ===================================================== */
+.alert-success {
+    background: linear-gradient(135deg, rgba(45, 80, 22, 0.1) 0%, rgba(61, 107, 32, 0.1) 100%) !important;
+    border: 2px solid var(--police-green) !important;
+    color: var(--police-green-dark) !important;
+    font-weight: 600 !important;
+}
+
+.alert-info {
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%) !important;
+    border: 2px solid var(--police-navy) !important;
+    color: var(--police-navy) !important;
+}
+
+/* =====================================================
+   CONTENIDO PRINCIPAL
+   ===================================================== */
+.content-wrapper {
+    background: #f8f9fa !important;
+}
+
+.content-header h1 {
+    color: var(--police-green-dark) !important;
+    font-weight: bold !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1) !important;
+}
+
+/* =====================================================
+   BREADCRUMBS
+   ===================================================== */
+.breadcrumb {
+    background: rgba(45, 80, 22, 0.1) !important;
+    border: 1px solid rgba(45, 80, 22, 0.2) !important;
+    border-radius: 6px !important;
+}
+
+.breadcrumb-item.active {
+    color: var(--police-green-dark) !important;
+    font-weight: 600 !important;
+}
+
+.breadcrumb-item a {
+    color: var(--police-green) !important;
+    text-decoration: none !important;
+}
+
+.breadcrumb-item a:hover {
+    color: var(--police-green-dark) !important;
+}
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+.main-footer {
+    background: var(--police-navy) !important;
+    color: var(--police-silver) !important;
+    border-top: 3px solid var(--police-gold) !important;
+    font-weight: 500 !important;
+}
+
+.main-footer a {
+    color: var(--police-gold) !important;
+}
+
+.main-footer a:hover {
+    color: var(--police-white) !important;
+}
+
+/* =====================================================
+   PRELOADER
+   ===================================================== */
+.preloader {
+    background: var(--police-green) !important;
+}
+
+.preloader .animation__shake {
+    filter: drop-shadow(0 0 10px var(--police-gold));
+}
+
+/* =====================================================
+   INFO BOXES Y SMALL BOXES
+   ===================================================== */
+.info-box {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+    border-radius: 8px !important;
+}
+
+.small-box {
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+}
+
+.small-box.bg-success {
+    background: linear-gradient(135deg, var(--police-green) 0%, var(--police-green-light) 100%) !important;
+}
+
+.small-box.bg-info {
+    background: linear-gradient(135deg, var(--police-navy) 0%, var(--police-navy-light) 100%) !important;
+}
+
+/* =====================================================
+   EFECTOS ESPECIALES
+   ===================================================== */
+.elevation-4 {
+    box-shadow: 0 14px 28px rgba(45, 80, 22, 0.25), 0 10px 10px rgba(45, 80, 22, 0.22) !important;
+}
+
+.elevation-3 {
+    box-shadow: 0 10px 20px rgba(45, 80, 22, 0.19), 0 6px 6px rgba(45, 80, 22, 0.23) !important;
+}
+
+/* =====================================================
+   SCROLLBAR PERSONALIZADO
+   ===================================================== */
+.sidebar::-webkit-scrollbar {
+    width: 8px !important;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: var(--police-green-dark) !important;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: var(--police-gold) !important;
+    border-radius: 4px !important;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #ffed4e !important;
+}
+
+/* =====================================================
+   ENLACES Y NAVEGACIÓN
+   ===================================================== */
+a {
+    color: var(--police-green) !important;
+}
+
+a:hover {
+    color: var(--police-green-dark) !important;
+}
+
+/* =====================================================
+   ICONOS ESPECIALES
+   ===================================================== */
+.fa-star,
+.fa-shield-alt,
+.fa-certificate {
+    color: var(--police-gold) !important;
+}
+
+.fa-user-shield,
+.fa-users-cog,
+.fa-id-badge {
+    color: var(--police-navy) !important;
+}
+
+/* =====================================================
+   MODO RESPONSIVE
+   ===================================================== */
+@media (max-width: 768px) {
+    .brand-text {
+        font-size: 1rem !important;
+    }
+    
+    .sidebar .nav-header {
+        font-size: 0.8rem !important;
+        padding: 10px 12px !important;
+    }
+    
+    .navbar-success .navbar-brand {
+        font-size: 1.1rem !important;
+    }
+}
+
+/* =====================================================
+   ANIMACIONES
+   ===================================================== */
+@keyframes policeGlow {
+    0% { box-shadow: 0 0 5px var(--police-gold); }
+    50% { box-shadow: 0 0 20px var(--police-gold), 0 0 30px var(--police-gold); }
+    100% { box-shadow: 0 0 5px var(--police-gold); }
+}
+
+.police-glow {
+    animation: policeGlow 2s ease-in-out infinite;
+}
+
+/* =====================================================
+   PERSONALIZACIÓN ESPECÍFICA DEL SISTEMA
+   ===================================================== */
+.sistema-policial {
+    font-family: 'Arial', 'Helvetica', sans-serif !important;
+}
+
+.logo-policial {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5) !important;
+    color: var(--police-white) !important;
+    font-weight: bold !important;
+}
+
+/* Estados de elementos */
+.activo {
+    color: var(--police-green) !important;
+    font-weight: bold !important;
+}
+
+.inactivo {
+    color: #6c757d !important;
+}
+
+.urgente {
+    color: #dc3545 !important;
+    font-weight: bold !important;
+    animation: policeGlow 1s ease-in-out infinite;
+}
+
+/* =====================================================
+   IMPRESIÓN
+   ===================================================== */
+@media print {
+    .main-header,
+    .main-sidebar,
+    .main-footer,
+    .no-print {
+        display: none !important;
+    }
+    
+    .content-wrapper {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    body {
+        color: #000 !important;
+        background: #fff !important;
+    }
+}
+
+/* =====================================================
+   COMPATIBILIDAD CON TEMAS EXISTENTES
+   ===================================================== */
+.theme-policial .main-header {
+    border-bottom: 3px solid var(--police-gold) !important;
+}
+
+.theme-policial .brand-link {
+    background: var(--police-navy) !important;
+}
+
+.theme-policial .content-header {
+    background: transparent !important;
+}
